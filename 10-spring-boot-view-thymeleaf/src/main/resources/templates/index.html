@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span th:text="hello"></span>
+<hr/>
+<span th:text="${msg}"></span>
+<hr/>
+<input th:value="${msg}"/>
+<hr/>
+<span th:text="${#strings.isEmpty(msg)}"></span>
+<hr/>
+<span th:text="${#strings.isEmpty(key)}"></span>
+<hr/>
+<span th:text="${#strings.contains(msg,'T')}"></span>
+<hr/>
+<span th:text="${#strings.startsWith(msg,'a')}"></span>
+<hr/>
+<span th:text="${#strings.endsWith(msg,'a')}"></span>
+<hr/>
+<span th:text="${#strings.length(msg)}"></span>
+<hr/>
+<span th:text="${#strings.indexOf(msg,'h')}"></span>
+<hr/>
+<span th:text="${#strings.substring(msg,5)}"></span>
+<hr/>
+<span th:text="${#strings.substring(msg,4,5)}"></span>
+<hr/>
+<span th:text="${#strings.toUpperCase(msg)}"></span>
+<hr/>
+<span th:text="${#strings.toLowerCase(msg)}"></span>
+
+<hr/>
+<span th:text="${#dates.format(date)}"></span>
+<hr/>
+<span th:text="${#dates.format(date,'yyy/MM/dd')}"></span>
+<hr/>
+<span th:text="${#dates.year(date)}"></span>
+<hr/>
+<span th:text="${#dates.month(date)}"></span>
+<hr/>
+<span th:text="${#dates.day(date)}"></span>
+
+
+</body>
+</html>
