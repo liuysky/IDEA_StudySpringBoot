@@ -22,14 +22,14 @@ public class RedisTest {
      */
     @Test
     public void testSet(){
-        this.redisTemplate.opsForValue().set("林春","你好漂亮");
+        this.redisTemplate.opsForValue().set("张无忌","乾坤大挪移");
     }
 
     /**
      * 取出一个字符串
      */
     @Test public void testGet(){
-        Object value = this.redisTemplate.opsForValue().get("林春");
+        Object value = this.redisTemplate.opsForValue().get("张无忌");
         System.out.println(value);
     }
 
