@@ -13,8 +13,10 @@ public class GlobalException {
     public SimpleMappingExceptionResolver getSimpleMappingExceptionResolver(){
         SimpleMappingExceptionResolver resolver=new SimpleMappingExceptionResolver();
         Properties mappings=new Properties();
-        mappings.put("java.lang.ArithmeticException", "error");
-        mappings.put("java.lang.NullPointerException", "error");
+        //参数一：异常的类型，注意必须是异常类型的全名
+        //参数二：视图名
+        mappings.put("java.lang.ArithmeticException.class","error1");
+        mappings.put("java.lang.NullPointerException.class","error2");
         resolver.setExceptionMappings(mappings);
         return resolver;
     }

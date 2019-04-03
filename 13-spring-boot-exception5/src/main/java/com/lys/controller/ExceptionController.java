@@ -1,12 +1,11 @@
 package com.lys.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class DemoController {
+public class ExceptionController {
+
     @RequestMapping("/show")
     public String showInfo(){
         String str=null;

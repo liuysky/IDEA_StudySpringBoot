@@ -1,21 +1,18 @@
 package com.lys.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class DemoController {
-    @RequestMapping("/show")
-    public String showInfo(){
+public class UsersController {
+    @RequestMapping("showUsers")
+    public String showUser(){
         String str=null;
         str.length();
         return "index";
     }
-
-    @RequestMapping("/show2")
-    public String showInfo2(){
+    @RequestMapping("showUsers2")
+    public String showUser2(){
         int a=10/0;
         return "index";
     }
